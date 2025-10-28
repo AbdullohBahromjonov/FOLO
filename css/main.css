@@ -76,6 +76,7 @@ header .logo {
 
 .hero--info h1 {
      font-size: 200px;
+     text-shadow: 0 0 30px rgba(161, 1, 255, 0.8), 0 0 60px rgba(161, 1, 255, 0.5);
 }
 
 .hero--info .btn {
@@ -144,6 +145,7 @@ header .logo {
      text-align: center;
      color: #fff;
      margin-bottom: 40px;
+     text-shadow: 0 0 30px rgba(161, 1, 255, 0.8), 0 0 60px rgba(161, 1, 255, 0.5);
 }
 
 .about-content {
