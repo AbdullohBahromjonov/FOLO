@@ -28,8 +28,8 @@
                <div class="hero--info">
                     <h1>$FOLO</h1>
                     <div class="btn-group">
-                         <button class="btn">SOON</button>
-                         <button class="btn">SOON</button>
+                         <button class="btn">CHART</button>
+                         <button class="btn">BUY</button>
                     </div>
                     <div class="social-links">
                          <a href="https://x.com/folosolana" class="social-circle">
@@ -107,6 +107,15 @@
                     <div class="page-counter" id="counter">1 / 1</div>
                     <button id="next">Next →</button>
                </div>
+
+               <div class="ca-card">
+                    <div class="ca-address" id="contractAddress">
+                         GXejSfsYdsVVQDegJtaBuLQtHn8dDpJmeo5zXVXQpump
+                    </div>
+                    <button class="ca-button" onclick="copyAddress()">
+                         Copy Address
+                    </button>
+               </div>
           </section>
           <section class="nft-section container">
                <div class="section-header">
@@ -120,6 +129,18 @@
      </div>
 
      <script>
+          function copyAddress() {
+               const address = document.getElementById('contractAddress').textContent.trim();
+               navigator.clipboard.writeText(address).then(() => {
+                    const button = document.querySelector('.ca-button');
+                    const originalText = button.textContent;
+                    button.textContent = 'Copied! ✓';
+                    setTimeout(() => {
+                         button.textContent = originalText;
+                    }, 2000);
+               });
+          }
+
           const pages = [...document.querySelectorAll('.page')];
           let currentIndex = 0;
           const counter = document.getElementById('counter');
