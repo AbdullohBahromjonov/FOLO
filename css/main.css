@@ -63,8 +63,10 @@ header .logo {
      object-fit: contain;
 }
 
+
+/* NFT Section */
 .nft-section {
-     padding: 80px 0;
+     padding: 40px 0;
 }
 
 .section-header {
@@ -89,12 +91,6 @@ header .logo {
      background: rgba(161, 1, 255, 0.2);
      border-radius: 30px;
      overflow: hidden;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nft-showcase:hover {
-     transform: scale(1.05);
-     box-shadow: 0 20px 60px rgba(161, 1, 255, 0.6);
 }
 
 .nft-showcase img {
@@ -183,7 +179,7 @@ header .logo {
 /* About Section */
 .about {
      background: rgba(40, 0, 76, 1);
-     padding: 60px 0;
+     padding: 40px 0;
 }
 
 .about-title {
@@ -210,7 +206,7 @@ header .logo {
 /* Book section */
 .book-section {
      background: linear-gradient(-45deg, rgba(40, 0, 76, 1) 0%, rgb(52, 0, 101) 100%);
-     padding: 20px 0;
+     padding: 40px 0;
 }
 
 .book {
